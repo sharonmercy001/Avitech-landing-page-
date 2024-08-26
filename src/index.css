@@ -1,0 +1,138 @@
+:root{
+  --blue:#2FABCF;
+  --blue_light:#71C6DF;
+  --blue_dark:#1A5F74;
+
+
+}
+*{
+  margin:0;
+  padding:0;
+  border:0;
+  position:relative;
+  transition:all 0.3s linear;
+  
+}
+body{
+  color:rgb(88, 84, 84);
+  font-family: "Inter", sans-serif;
+  background-color:rgb(248, 245, 245);
+}
+.main{
+  display:grid;
+  gap:2rem;
+}
+nav{
+  width:100%;
+  background-color:white;
+  position: sticky;
+  top: 0;
+  z-index: 300;
+  img{
+    width:120px;
+  }
+
+}
+.landing{
+  width:100%;
+  & .content{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap ;
+    span{
+      margin:auto;
+      h1{
+        font-size: 48px;
+      }
+      h2{
+        font-size:36px ;
+      }
+    }
+  }
+}
+.parent-props{
+  width:95%;
+  margin:auto;
+  display:grid;
+  gap:2rem;
+  h2{
+    text-align: center}
+}
+.props{
+  display:grid;
+  gap:1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  justify-content: center;
+}
+.property {
+  width:100%;
+  padding:4%;
+  background-color:white;
+  display:flex;
+  /* flex-wrap:wrap; */
+  gap:10px;
+  border-radius: 15px;
+  cursor:pointer;
+  &:hover{ 
+    box-shadow:0px 0px 12px rgba(0, 0, 0, 0.144);
+  }
+
+  & .icon-div{
+    margin:auto;
+    width:50px;
+    height:50px;
+    img{
+      width:50px;
+    }
+  }
+  & .text{
+    margin:auto;
+  }
+}
+.consultancy-props{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2%;
+}
+.Consultancy{
+
+  flex:1;
+  background-color: white;
+  border-radius: 15px;
+  &:hover{ 
+    box-shadow:0px 0px 12px rgba(0, 0, 0, 0.144);
+  }
+  & .text{padding:2%}
+  img{
+    margin:auto;
+    width:100%;
+    border-radius:15px 15px 0px 0px;
+   
+    height:300px;
+    object-fit: cover;
+  }
+  li{
+    list-style: inside;
+  }
+
+}
+form{
+  width:50vw;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 15px;
+  padding:1rem;
+  margin: auto;
+}
+footer{
+  /* width:100%; */
+  display:grid;
+  gap:4rem;
+  text-align: center;
+  background-color:var(--blue_dark) ;
+  color:white;
+  padding:4% ;
+  
+
+}
